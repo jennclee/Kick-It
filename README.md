@@ -1,6 +1,6 @@
 # Kick-It
 
-> Pithy project description
+> An event aggregator application to find local events by interest
 
 ## Team
 
@@ -15,7 +15,6 @@
 1. [Requirements](#requirements)
 1. [Development](#development)
     1. [Installing Dependencies](#installing-dependencies)
-    1. [Tasks](#tasks)
 1. [Roadmap](#roadmap)
 1. [Contributing](#contributing)
 
@@ -30,7 +29,7 @@
 - Postgresql 9.1.x
 - React 
 - React Dom
-- Bookshelf
+- Knex
 
 
 ## Development
@@ -39,7 +38,7 @@
 
 From within the root directory:
 
-```sh
+```
 npm install
 
 ```
