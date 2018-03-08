@@ -2,3 +2,4 @@ node_modules/
 config.js
 .DS_Store
 client/dist/bundle.js
+package-lock.json

@@ -20,7 +20,7 @@
 
 ## Usage
 
-> Some usage instructions
+> Run `npm start` in terminal to start application locally and view the app at localhost:3000
 
 ## Requirements
 
