@@ -45,7 +45,7 @@ app.get('/initialLoad', function (req, res) {
     headers: 
     { authorization: API_key }, 
   }
-  
+
   let getCalls = () =>{
     return new Promise((resolve, reject) =>{ 
       request(month_options, function(error, response, body){
@@ -72,6 +72,7 @@ app.get('/initialLoad', function (req, res) {
     console.log(holder.length);
     return holder.map((event) => {
         let imageUrl = event.logo ? event.logo.url : 'https://cdn.evbstatic.com/s3-build/perm_001/f8c5fa/django/images/discovery/default_logos/4.png';
+        console.log(imageUrl);    
         let catID = event.subcategory_id === 17001 ? event.subcategory_id : event.category_id; 
         let defaultPrice = event.is_free ? 'free' : 'paid';
         let eventName = `$$${event.name.text}$$`;
